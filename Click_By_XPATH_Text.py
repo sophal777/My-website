@@ -52,3 +52,17 @@ def Search_By_XPATH_Text(driver, Name_ID):
         return True
     print(f"Search Failed: {Name_ID}")
     return False
+
+Search_By_XPATH_Text(driver, "Next")
+
+Click_By_XPATH_Text(driver, "Next")
+
+keys_By_XPATH_Text(driver, "First name", "Sophal", char=0.5)
+
+
+if Search_By_XPATH_Text(driver, "Next"):
+    Click_By_XPATH_Text(driver, "Next")
+else:
+    print("មិនទាន់រកឃើញ Next")
+
+
